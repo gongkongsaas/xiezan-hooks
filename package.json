@@ -1,7 +1,7 @@
 {
   "name": "xiezan-util-test",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "协赞工具库",
     "author": {
     "name": "iworkerweb",
