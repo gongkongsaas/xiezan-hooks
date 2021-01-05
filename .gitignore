@@ -1,0 +1,7 @@
+# 编辑器相关
+/.history
+/.vscode
+
+# 构建相关
+/dist
+/node_modules

@@ -1,0 +1,36 @@
+{
+  "name": "xiezan-util-test",
+  "version": "0.1.0",
+  "private": true,
+  "description": "协赞工具库",
+    "author": {
+    "name": "iworkerweb",
+    "email": "865116277@qq.com",
+    "url": "https://github.com/iworkerweb/xiezan-util"
+  },
+  "license": "MIT",
+  "keywords": [
+    "协赞",
+    "工具库"
+  ],
+  "homepage": "https://github.com/iworkerweb/xiezan-util",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iworkerweb/xiezan-util"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build-ts": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
