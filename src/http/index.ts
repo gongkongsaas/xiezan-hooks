@@ -1,5 +1,1 @@
-import axios from 'axios'
-
-export function POST(opts) {
-  return axios(opts)
-}
+export { default as HttpRequest } from './AxiosHttpRequest';
