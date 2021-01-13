@@ -26,7 +26,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build-ts": "yarn lint & tsc -p tsconfig.build.json",
-    "lint": "eslint src --ext .ts,.js"
+    "lint": "eslint src --ext .ts,.js",
+    "prepublishOnly": "yarn build-ts"
   },
   "devDependencies": {
     "@types/node": "^14.14.20",
