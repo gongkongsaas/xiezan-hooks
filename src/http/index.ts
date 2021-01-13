@@ -1,1 +1,1 @@
-export { default as HttpRequest } from './AxiosHttpRequest';
+export { default as request } from './request'

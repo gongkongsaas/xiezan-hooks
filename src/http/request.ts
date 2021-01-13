@@ -5,13 +5,14 @@ import axios from 'axios'
  */
 
 const baseConfig = {
+  baseURL: process.env.VUE_APP_BASE_API,
   withCredentials: true,
 }
 
-const instance = axios.create(baseConfig)
+const service = axios.create(baseConfig)
 
 // 添加请求拦截器
-instance.interceptors.request.use(
+service.interceptors.request.use(
   (config) => {
     // Do something before request is sent
 
@@ -27,12 +28,11 @@ instance.interceptors.request.use(
 )
 
 // 添加响应拦截器
-instance.interceptors.response.use(
+service.interceptors.response.use(
   (response) => {
     // Any status code that lie within the range of 2xx cause this function to trigger
     // Do something with response data
     const data = response.data
-    // 一定要返回 config
     return data
   },
   (error) => {
@@ -43,4 +43,4 @@ instance.interceptors.response.use(
   },
 )
 
-export default instance
+export default service
